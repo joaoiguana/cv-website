@@ -1,0 +1,144 @@
+// Variables
+$primary-color: #4A90E2; // Updated primary color for a more modern feel
+$secondary-color: #333333;
+$background-color: #FAFAFA;
+$font-stack: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+// Reset some default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: $font-stack;
+  color: $secondary-color;
+  background-color: $background-color;
+  line-height: 1.6;
+}
+
+// Navigation Bar
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: darken($background-color, 5%);
+  a {
+    text-decoration: none;
+    color: darken($primary-color, 10%);
+    margin: 0 15px;
+    font-weight: bold;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// Hero Section
+#home {
+  text-align: center;
+  padding: 100px 20px;
+  h1 {
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// General Section Styling
+section {
+  padding: 60px 20px;
+  &:nth-child(even) {
+    background-color: lighten($background-color, 3%);
+  }
+  h2 {
+    text-align: center;
+    color: darken($primary-color, 15%);
+    margin-bottom: 30px;
+  }
+  p, div {
+    text-align: center;
+  }
+}
+
+// Portfolio Section
+#info {
+  .portfolio-item {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 8px;
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+}
+
+// Contact Form
+#contact {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input, textarea {
+      padding: 10px;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: darken($background-color, 5%);
+  p {
+    color: darken($secondary-color, 10%);
+  }
+}
+
+// Responsive Design
+@media (min-width: 768px) {
+  nav {
+    justify-content: space-around;
+  }
+  #projects, #info {
+    display: flex;
+    justify-content: space-evenly;
+    .portfolio-item {
+      width: calc(33% - 40px); // Adjust based on actual content width
+    }
+  }
+  #contact form {
+    flex-direction: row;
+    input, textarea {
+      flex: 1;
+    }
+    button {
+      flex: 0;
+    }
+  }
+}
