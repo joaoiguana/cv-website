@@ -49,26 +49,30 @@ main {
     display: block;
   }
 
-  main .profile .tr {
+  main .home {
+    height: 90vh;
+  }
+
+  main .home .tr {
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
   }
 
-  main .profile .tr:nth-child(2) h1 {
+  main .home .tr:nth-child(2) h1 {
     text-align: end;
   }
 
-  main .profile .tr:nth-child(2) img {
+  main .home .tr:nth-child(2) img {
     height: 6em;
   }
 
-  main .profile .tr h1 {
+  main .home .tr h1 {
     margin: 0;
     font-size: 6em;
   }
 
-  main .profile .tr p {
+  main .home .tr p {
     margin: 0;
   }
 }
