@@ -41,7 +41,7 @@ main {
   header {
     justify-content: space-between;
     width: 90vw;
-    margin-bottom: 3rem;
+    height: 10vh;
   }
 
   header .hidden {
@@ -49,19 +49,27 @@ main {
     display: block;
   }
 
-  main .tr {
+  main .profile .tr {
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
   }
 
-  main .tr:nth-child(2) h1 {
+  main .profile .tr:nth-child(2) h1 {
     text-align: end;
   }
 
-  main .tr h1 {
+  main .profile .tr:nth-child(2) img {
+    height: 6em;
+  }
+
+  main .profile .tr h1 {
     margin: 0;
     font-size: 6em;
+  }
+
+  main .profile .tr p {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.d5c7c57f.css.map */

@@ -42,8 +42,9 @@ main {
 @media (min-width: 600px) {
   header {
     width: 90vw;
+    height: 10vh;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
 
     .hidden {
       visibility: hidden;
@@ -52,20 +53,32 @@ main {
   }
 
   main {
-    .tr {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
 
-      &:nth-child(2) {
-        h1 {
-          text-align: end;
+    .profile {
+
+      .tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &:nth-child(2) {
+          h1 {
+            text-align: end;
+          }
+
+          img {
+            height: 6em;
+          }
         }
-      }
 
-      h1 {
-        font-size: 6em;
-        margin: 0;
+        h1 {
+          font-size: 6em;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+        }
       }
     }
   }
