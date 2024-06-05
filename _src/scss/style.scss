@@ -33,11 +33,39 @@ header {
   }
 }
 
+main {
+  width: 90vw;
+}
+
 @media (min-width: 600px) {
   header {
+    width: 90vw;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
     .hidden {
       visibility: hidden;
       display: block; /* Ensure it occupies space in the layout */
+    }
+  }
+
+  main {
+    .tr {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &:nth-child(2) {
+        justify-content: flex-end;
+        h1 {
+          text-align: end;
+        }
+      }
+
+      h1 {
+        font-size: 6em;
+        margin: 0;
+      }
     }
   }
 }

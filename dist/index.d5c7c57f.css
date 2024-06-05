@@ -33,11 +33,39 @@ header .hidden {
   display: none;
 }
 
+main {
+  width: 90vw;
+}
+
 @media (width >= 600px) {
+  header {
+    justify-content: space-between;
+    width: 90vw;
+    margin-bottom: 3rem;
+  }
+
   header .hidden {
     visibility: hidden;
     display: block;
   }
-}
 
+  main .tr {
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  main .tr:nth-child(2) {
+    justify-content: flex-end;
+  }
+
+  main .tr:nth-child(2) h1 {
+    text-align: end;
+  }
+
+  main .tr h1 {
+    margin: 0;
+    font-size: 6em;
+  }
+}
 /*# sourceMappingURL=index.d5c7c57f.css.map */
