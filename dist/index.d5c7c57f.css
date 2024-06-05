@@ -1,144 +1,42 @@
-* {
-  box-sizing: border-box;
+body {
+  color: #050505;
+  background-color: #e0dfdd;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  transition: all .3s ease-in-out;
-}
-
-body {
-  color: #333;
-  background-color: #fafafa;
-  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-}
-
-nav {
-  background-color: #ededed;
-  justify-content: center;
-  padding: 20px 0;
+  font-family: DM Sans, sans-serif;
   display: flex;
 }
 
-nav a {
-  color: #2275d7;
-  margin: 0 15px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #4a90e2;
-}
-
-#home {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-#home h1 {
-  color: #4a90e2;
-  margin-bottom: 20px;
-}
-
-#home p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.2em;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-section:nth-child(2n) {
-  background-color: #fff;
-}
-
-section h2 {
-  text-align: center;
-  color: #1f69c1;
-  margin-bottom: 30px;
-}
-
-section p, section div {
-  text-align: center;
-}
-
-#info .portfolio-item {
-  color: #fff;
-  background-color: #4a90e2;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 300px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-#info .portfolio-item:hover {
-  background-color: #76abe9;
-}
-
-#contact form {
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+header {
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
   display: flex;
 }
 
-#contact form input, #contact form textarea {
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 10px;
+header .nav {
+  justify-content: space-between;
+  gap: 1rem;
+  display: flex;
 }
 
-#contact form button {
-  color: #fff;
-  cursor: pointer;
-  background-color: #4a90e2;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+header p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-#contact form button:hover {
-  background-color: #2275d7;
+header .hidden {
+  display: none;
 }
 
-footer {
-  text-align: center;
-  background-color: #ededed;
-  padding: 20px 0;
-}
-
-footer p {
-  color: #1a1a1a;
-}
-
-@media (width >= 768px) {
-  nav {
-    justify-content: space-around;
-  }
-
-  #projects, #info {
-    justify-content: space-evenly;
-    display: flex;
-  }
-
-  #projects .portfolio-item, #info .portfolio-item {
-    width: calc(33% - 40px);
-  }
-
-  #contact form {
-    flex-direction: row;
-  }
-
-  #contact form input, #contact form textarea {
-    flex: 1;
-  }
-
-  #contact form button {
-    flex: 0;
+@media (width >= 600px) {
+  header .hidden {
+    visibility: hidden;
+    display: block;
   }
 }
 
