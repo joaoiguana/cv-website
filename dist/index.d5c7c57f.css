@@ -75,5 +75,9 @@ main {
   main .home .tr p {
     margin: 0;
   }
+
+  main .work {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=index.d5c7c57f.css.map */
