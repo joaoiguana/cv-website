@@ -40,7 +40,17 @@ header {
 }
 
 main {
-  width: 90vw;
+  .home {
+    width: 100vw;
+
+    .tr {
+      &:nth-child(2) {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -60,6 +70,8 @@ main {
 
     .home {
       height: 90vh;
+      width: 90vw;
+      margin: 0 auto;
 
       .tr {
         display: flex;
@@ -89,11 +101,12 @@ main {
 
     .work {
       height: 100vh;
+      width: 100vw;
 
       .tr {
         display: flex;
         align-items: center;
-        height: 300px;
+        height: 350px;
 
         h1 {
           font-size: 4em;
@@ -102,6 +115,17 @@ main {
 
         .tc {
           width: 50vw;
+
+          &.lone {
+            padding: 1rem;
+            height: inherit;
+            background-color: #519872;
+          }
+
+          &.rone {
+            padding: 1rem;
+            height: inherit;
+          }
         }
       }
     }
