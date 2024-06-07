@@ -23,6 +23,10 @@ header .nav {
   display: flex;
 }
 
+header .nav p {
+  cursor: pointer;
+}
+
 header p {
   margin: 0;
   font-size: 14px;
@@ -78,6 +82,21 @@ main {
 
   main .work {
     height: 100vh;
+  }
+
+  main .work .tr {
+    align-items: center;
+    height: 300px;
+    display: flex;
+  }
+
+  main .work .tr h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+
+  main .work .tr .tc {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=index.d5c7c57f.css.map */

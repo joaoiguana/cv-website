@@ -22,6 +22,10 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+
+    p {
+      cursor: pointer;
+    }
   }
 
   p {
@@ -85,6 +89,21 @@ main {
 
     .work {
       height: 100vh;
+
+      .tr {
+        display: flex;
+        align-items: center;
+        height: 300px;
+
+        h1 {
+          font-size: 4em;
+          margin: 0;
+        }
+
+        .tc {
+          width: 50vw;
+        }
+      }
     }
   }
 }
