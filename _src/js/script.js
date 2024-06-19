@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
         element.style.display = 'block';
       });
       navElement.innerHTML = `
-        <p class="nav-item"><bold>Menu</bold></p>
+        <p class="nav-item"><bold>Work</bold></p>
+        <p class="nav-item"><bold>About</bold></p>
+        <p class="nav-item"><bold>Contact</bold></p>
       `;
     }
   }
