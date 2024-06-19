@@ -10,10 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <p><bold>João Garcia</bold></p>
+    <p class="nav-name"><bold>João Garcia</bold></p>
     <div class="current-position">
       <p>Currently Full Stack</p>
       <p>engineer at Foodriders.co</p>
@@ -49,17 +50,26 @@
   <main>
     <section class="home">
       <div class="tr">
-        <p id="home-description">I SUPPORT COMPANIES<br>AND STARTUPS WITH<br>END-TO-END DEVELOPMENT</p>
+        <p data-aos="fade-right" data-aos-duration="2000" id="home-description">I SUPPORT COMPANIES<br>AND STARTUPS WITH<br>END-TO-END DEVELOPMENT</p>
       </div>
       <div class="tr">
-        <h1 id="home-job">FULL STACK<br/>DEVELOPER</h1>
+        <h1 id="home-job">
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">F</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">U</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">L</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">L</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> </span>
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">S</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">T</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">A</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">C</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">K</span>
+          <br/>
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">D</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">E</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300">V</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">E</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">L</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1600">O</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">P</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">E</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1900">R</span>
+        </h1>
       </div>
       <div class="tr">
-        <img id="home-img" src="./img/square-removebg-preview.png" alt="João Garcia">
+        <img data-aos="fade-up" data-aos-duration="2000" id="home-img" src="./img/square-removebg-preview.png" alt="João Garcia">
       </div>
       <div class="tr">
-        <h1 id="home-name">JOÃO<br>GARCIA</h1>
-        <img id="home-svg" src="./svg/arrow-down-sharp-svgrepo-com.svg" alt="">
+        <h1 id="home-name">
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2100">J</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2200">O</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2300">Ã</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2400">O</span>
+          <br/>
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2500">G</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2600">A</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2700">R</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2800">C</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2900">I</span><span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">A</span>
+        </h1>
+        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="3100" id="home-svg" src="./svg/arrow-down-sharp-svgrepo-com.svg" alt="">
       </div>
     </section>
     <!-- <section class="work"  id="work">
@@ -77,5 +87,6 @@
     </section> -->
   </main>
   <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

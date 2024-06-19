@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Hello world!');
 
+  AOS.init();
+
   const handleResize = () => {
     const currentPositionElements = document.querySelectorAll('.current-position');
     const locationElements = document.querySelectorAll('.location');
