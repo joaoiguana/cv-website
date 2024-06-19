@@ -55,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     transform: translateY(-100%);
 
     .menu-header {
@@ -79,6 +79,7 @@ header {
       h1 {
         margin: 0;
         font-size: 3.5em;
+        line-height: 1.2;
       }
 
       p {
@@ -153,34 +154,57 @@ main {
     }
 
     p {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 
   main {
 
     .home {
-      height: 90vh;
+      margin-top: 3rem;
       width: 90vw;
-      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+                "a a b"
+                "d d e";
+
 
       .tr {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+
+        &:nth-child(1) {
+          grid-area: d;
+          padding: 1rem;
+        }
 
         &:nth-child(2) {
+          grid-area: a;
+        }
+
+        &:nth-child(3) {
+          grid-area: b;
+
+          img {
+            margin-left: 10rem;
+            height: 16em;
+          }
+        }
+
+        &:nth-child(4) {
+
           h1 {
             text-align: end;
+            grid-area: e;
           }
 
           img {
-            height: 6em;
+            grid-area: c;
+            padding: 1rem;
           }
         }
 
         h1 {
-          font-size: 6em;
+          font-size: 8em;
           margin: 0;
         }
 
