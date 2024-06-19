@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 
 header {
@@ -106,10 +107,11 @@ header {
 main {
   .home {
     width: 90vw;
-    margin: 0 auto;
+    margin: 8rem auto 6rem auto;
 
     h1 {
       font-size: 3.5em;
+      margin: 0;
     }
 
     p {
@@ -118,7 +120,17 @@ main {
     }
 
     .tr {
-      &:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      &:nth-child(3) {
+        img {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &:nth-child(4) {
         img {
           height: 4rem;
         }
@@ -183,9 +195,6 @@ main {
       width: 100vw;
 
       .tr {
-        display: flex;
-        align-items: center;
-        height: 350px;
 
         h1 {
           font-size: 4em;

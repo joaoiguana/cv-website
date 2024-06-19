@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Hello world!');
 
-  function handleResize() {
+  const handleResize = () => {
     const currentPositionElements = document.querySelectorAll('.current-position');
     const locationElements = document.querySelectorAll('.location');
     const navElement = document.querySelector('.nav');
