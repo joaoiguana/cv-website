@@ -12,7 +12,8 @@ body {
 
 header {
   justify-content: space-around;
-  width: 100%;
+  width: 90vw;
+  margin-top: 1rem;
   padding: 1rem;
   display: flex;
 }
@@ -29,16 +30,73 @@ header .nav p {
 
 header p {
   margin: 0;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 header .hidden {
   display: none;
 }
 
+header .fullscreen-menu {
+  color: #fff;
+  z-index: 1000;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  transition: transform .3s ease-in-out;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+header .fullscreen-menu .menu-header {
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+}
+
+header .fullscreen-menu .menu-content {
+  text-align: center;
+}
+
+header .fullscreen-menu .menu-content p {
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .fullscreen-menu.hidden {
+  transform: translateY(-100%);
+}
+
+header .fullscreen-menu.visible {
+  transform: translateY(0);
+}
+
+header .fullscreen-menu .close-menu {
+  cursor: pointer;
+}
+
 main .home {
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+main .home h1 {
+  font-size: 3.5em;
+}
+
+main .home p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 main .home .tr:nth-child(2) img {
@@ -50,11 +108,16 @@ main .home .tr:nth-child(2) img {
     justify-content: space-between;
     width: 90vw;
     height: 10vh;
+    margin-top: 2rem;
   }
 
   header .hidden {
     visibility: hidden;
     display: block;
+  }
+
+  header p {
+    font-size: 20px;
   }
 
   main .home {

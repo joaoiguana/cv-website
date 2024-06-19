@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleResize() {
     const currentPositionElements = document.querySelectorAll('.current-position');
     const locationElements = document.querySelectorAll('.location');
+    const navElement = document.querySelector('.nav');
 
     if (window.innerWidth <= 600) {
       currentPositionElements.forEach(element => {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         element.style.visibility = 'hidden';
         element.style.display = 'block';
       });
+      navElement.innerHTML = '<p class="nav-item"><bold>Menu</bold></p>';
     } else {
       currentPositionElements.forEach(element => {
         element.style.display = 'block';
@@ -21,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         element.style.visibility = 'visible';
         element.style.display = 'block';
       });
+      navElement.innerHTML = `
+        <p class="nav-item"><bold>Menu</bold></p>
+      `;
     }
   }
 
@@ -30,12 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run on resize
   window.addEventListener('resize', handleResize);
 
-  // Smooth scroll to "Work" section
-  const workLink = document.querySelector('.nav p:nth-child(1)'); // Assuming the first <p> in .nav is the "Work" link
-  const workSection = document.getElementById('work');
+  const navItem = document.querySelector('.nav .nav-item');
+  const fullscreenMenu = document.querySelector('.fullscreen-menu');
+  const closeMenu = document.querySelector('.fullscreen-menu .close-menu');
 
-  workLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default link behavior
-    workSection.scrollIntoView({ behavior: 'smooth' });
+  navItem.addEventListener('click', () => {
+    fullscreenMenu.classList.remove('hidden');
+    fullscreenMenu.classList.add('visible');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    fullscreenMenu.classList.remove('visible');
+    fullscreenMenu.classList.add('hidden');
   });
 });
