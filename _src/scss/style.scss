@@ -248,26 +248,40 @@ main {
     }
 
     .profile {
+      padding-bottom: 12rem;
+
       .profile-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 20% 40% 40%;
         grid-template-areas:
                   "tag intro intro"
                   "tag header description";
 
         .profile-tag {
           grid-area: tag;
+
+          h4 {
+            font-size: 22px;
+          }
         }
 
         .profile-intro {
+          padding-right: 7rem;
           grid-area: intro;
+
+          p {
+            font-size: 40px;
+            font-weight: 600;
+          }
         }
 
         .profile-description-header {
+          padding-right: 7rem;
           grid-area: header;
         }
 
         .profile-description {
+          padding-right: 12rem;
           grid-area: description;
         }
       }
